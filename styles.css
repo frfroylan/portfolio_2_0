@@ -1,0 +1,300 @@
+/**
+Cinemgraph: http://blog.hubspot.com/marketing/how-to-create-a-cinemagraph-in-7-easy-steps#sm.0000zc00i4f5adb3vo91y4ljdtkvw;
+
+Prism type image: https://www.behance.net/gallery/16579635/low-poly-self-portrait-tutorial
+**/
+/**TESTING**/
+/*.row{
+	border: 1px solid red;
+}*/
+i{color:white;}
+
+/***************************/
+*{
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.container-fluid{
+	margin: 0 auto;
+	width: 100%;
+}
+body{
+	background-color: #1C1C1C;
+	color: #fff;
+}
+.section-header{
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding-top: 100px;
+	font-size: 58px;
+	font-family: 'Raleway';
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #FC8890;
+	text-align: center;
+}
+.container-fluid section{
+	padding-bottom: 100px;
+}
+/** NAVBAR *********************************/
+.navbar{
+	background-color: #212121;
+	border-bottom: 2px solid #26a69a;
+	font-size: 20px;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.75);
+}
+a.navbar-brand{
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+#navbar li >a,
+.navbar-header > a.navbar-brand{
+	color: #009688;
+	background-color: #212121;
+	transition: .3s color,
+		     .3s background-color;
+}
+#navbar li:hover > a,
+.navbar-header:hover > a.navbar-brand{
+	color: #212121;
+	background-color: #4db6ac;
+}
+button.navbar-toggle{
+	border: none;
+}
+.green-bar{
+	background-color: #009688 !important;
+}
+/****************************************************/
+/** JUMBOTRON *********************************/
+.jumbotron{
+	margin: 0;
+	margin-top: 52px;
+	width: 100%;
+	height: 100vh;
+}
+/****************************************************/
+/** PORTFOLIO *********************************/
+.port > .col-lg-12{
+	padding: 0;
+}
+.flex-port{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.flex-port-child{
+	width: 50%;
+	height: 350px;
+	border: 1px solid white;
+}
+.enigma{
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.amigoes{
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.mia{
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.hiking{
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/****************************************************/
+/** EMPLOYMENT *********************************/
+
+
+/****************************************************/
+/** ABOUT *********************************/
+
+
+/****************************************************/
+/** CONTACT *********************************/
+
+
+/****************************************************/
+/** FOOTER *********************************/
+
+/****************************************************/
+/** MEDIA QUERIES *********************************/
+input[type=text], 
+input[type=email], 
+.message {
+	transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #fff;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+.message:focus {
+	box-shadow: 0 0 5px rgba(255, 48, 72, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(255, 48, 72, 1);
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px){
+	/** GENERAL **/
+	.section-header{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-top: 100px;
+		font-size: 32px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.sub-header{
+		font-size: 24px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	/** PORTFOLIO **/
+	.flex-port-child{
+		width: 100%;
+		height: 50vh;
+		border: 1px solid white;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 15px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 1px dotted #009688;
+	}
+	.who{
+		border-top: 1px dotted #009688;
+	}
+	.use{
+		border-bottom: 1px dotted #009688;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+	.section-header{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-top: 100px;
+		font-size: 38px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.sub-header{
+		font-size: 24px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	.flex-port-child{
+		width: 100%;
+		height: 50vh;
+		border: 1px solid white;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 15px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 1px dotted #009688;
+	}
+	.who{
+		border-top: 1px dotted #009688;
+	}
+	.use{
+		border-bottom: 1px dotted #009688;
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 425px){
+	.section-header{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-top: 100px;
+		font-size: 38px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.sub-header{
+		font-size: 24px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	.flex-port-child{
+		width: 90%;
+		height: 350px;
+		border: 1px solid white;
+		margin-top: 40px;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 15px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 1px dotted #009688;
+	}
+	.who{
+		border-top: 1px dotted #009688;
+	}
+	.use{
+		border-bottom: 1px dotted #009688;
+	}
+}
+@media screen and (min-width: 426px) and (max-width:768px){
+
+}
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+}
+@media screen and (min-width: 1025px){
+
+}
