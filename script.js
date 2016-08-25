@@ -12,4 +12,9 @@ $(document).ready(function(){
       }
     }
   });
+
+  $('.navbar-header button').on('click', function(e){
+    $(this).toggleClass('rotate');
+    
+  });
 });
