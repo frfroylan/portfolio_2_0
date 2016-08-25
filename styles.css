@@ -37,9 +37,12 @@ body{
 .container-fluid section{
 	padding-bottom: 100px;
 }
+.link-text{
+	color: #009688;
+}
 /** NAVBAR *********************************/
 .navbar{
-	background-color: #212121;
+	background-color: #1e1e1e;
 	border-bottom: 2px solid #26a69a;
 	font-size: 20px;
 	font-family: 'Quicksand';
@@ -53,31 +56,37 @@ a.navbar-brand{
 #navbar li >a,
 .navbar-header > a.navbar-brand{
 	color: #009688;
-	background-color: #212121;
+	background-color: #1e1e1e;
 	transition: .3s color,
 		     .3s background-color;
 }
 #navbar li:hover > a,
 .navbar-header:hover > a.navbar-brand{
-	color: #212121;
+	color: #1e1e1e;
 	background-color: #4db6ac;
 }
 button.navbar-toggle{
 	border: none;
+	background-color: none;
 }
 .green-bar{
 	background-color: #009688 !important;
 }
 /****************************************************/
 /** JUMBOTRON *********************************/
-.jumbotron{
+.container-fluid .jumbotron{
 	margin: 0;
 	margin-top: 52px;
+	padding: 0;
 	width: 100%;
 	height: 100vh;
+	border-radius: 0;
 }
 /****************************************************/
 /** PORTFOLIO *********************************/
+section.row.port{
+	padding-bottom: 0;
+}
 .port > .col-lg-12{
 	padding: 0;
 }
@@ -118,21 +127,16 @@ button.navbar-toggle{
 
 /****************************************************/
 /** EMPLOYMENT *********************************/
-
-
+.emp{
+	background-color: #1e1e1e;
+	border-bottom: 1px solid #1c7a70;
+}
 /****************************************************/
 /** ABOUT *********************************/
 
 
 /****************************************************/
 /** CONTACT *********************************/
-
-
-/****************************************************/
-/** FOOTER *********************************/
-
-/****************************************************/
-/** MEDIA QUERIES *********************************/
 input[type=text], 
 input[type=email], 
 .message {
@@ -146,11 +150,77 @@ input[type=email],
 input[type=text]:focus, 
 input[type=email]:focus, 
 .message:focus {
-	box-shadow: 0 0 5px rgba(255, 48, 72, 1);
+	box-shadow: 0 0 5px rgba(38, 166, 154, 1);
 	padding: 3px 0px 3px 3px;
 	margin: 5px 1px 3px 0px;
-	border: 1px solid rgba(255, 48, 72, 1);
+	border: 1px solid rgba(38, 166, 154, 1);
 }
+form button{
+	float: right;
+	margin-top: 10px;
+}
+form .btn-primary{
+	background-color: #26a69a;
+	border: none;
+	font-family: 'Quicksand';
+	font-size: 18px;
+	font-weight: 400
+	letter-spacing: 1px;
+}
+
+
+/****************************************************/
+/** FOOTER *********************************/
+footer.container-fluid{
+	margin-top: 40px;
+}
+footer {
+	width: 100%;
+	height: 100px;
+	margin-top: 50px;
+	border-top: 2px solid #26a69a;
+}
+.foot-header{
+	font-family: 'Quicksand';
+	text-align: center;
+}
+.top-link{
+	float: right;
+	display: inline;
+	text-decoration: none;
+	color: #009688;
+}
+.social-icons{
+	display: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	/*border: 1px solid blue;*/
+}
+footer i{
+	color: #009688;
+	margin-left: 10px;
+}
+/****************************************************/
+/** OTHER *********************************/
+
+/*Rotation for button when viewed on smaller devices*/
+.navbar-header button{
+	transition: .5s transform;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus{
+	background: transparent;
+
+}
+.rotate{
+	transform: rotate(90deg);
+	transition: .5s transform;
+}/****************************************************/
+
+/** MEDIA QUERIES *********************************/
+
 
 @media screen and (min-width: 0px) and (max-width: 320px){
 	/** GENERAL **/
@@ -198,6 +268,19 @@ input[type=email]:focus,
 	.use{
 		border-bottom: 1px dotted #009688;
 	}
+	/** CONTACT **/
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 20px;
+	}
+
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px){
@@ -242,6 +325,18 @@ input[type=email]:focus,
 	}
 	.use{
 		border-bottom: 1px dotted #009688;
+	}
+	/** CONTACT **/
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 20px;
 	}
 }
 @media screen and (min-width: 376px) and (max-width: 425px){
@@ -288,13 +383,208 @@ input[type=email]:focus,
 	.use{
 		border-bottom: 1px dotted #009688;
 	}
+	/** CONTACT **/
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** FOOTER **/
+	footer {
+		height: 120px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 24px;
+	}
 }
 @media screen and (min-width: 426px) and (max-width:768px){
-
+	.section-header{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-top: 100px;
+		font-size: 38px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.sub-header{
+		font-size: 24px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	.flex-port-child{
+		width: 90%;
+		height: 350px;
+		border: 1px solid white;
+		margin-top: 40px;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 20px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 1px dotted #009688;
+	}
+	.who{
+		border-top: 1px dotted #009688;
+	}
+	.use{
+		border-bottom: 1px dotted #009688;
+	}
+	/** CONTACT **/
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** FOOTER **/
+	footer {
+		height: 120px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 24px;
+	}
 }
 @media screen and (min-width: 768px) and (max-width:1024px){
-
+	.section-header{
+		font-size: 38px;
+	}
+	.sub-header{
+		font-size: 28px;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 20px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 20px;
+		line-height: 38px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 5px solid #009688;
+	}
+	.who{
+		border-top: 5px dotted #009688;
+	}
+	.use{
+		border-bottom: 5px dotted #009688;
+	}
+	.who,.what,.cant,.use{
+		padding-top: 20px;
+	}
+	/** CONTACT **/
+	.cont form{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** FOOTER **/
+	footer {
+		height: 120px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 24px;
+	}
 }
 @media screen and (min-width: 1025px){
+	.navbar{
+		font-size: 24px;
+	}
+	a.navbar-brand{
+		font-size: 36px;
+		letter-spacing: 1px;
+	}
+	.section-header{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-top: 100px;
+		font-size: 48px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.sub-header{
+		font-size: 28px;
+		font-family: 'Raleway';
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/** ABOUT **/
+	.list{
+		list-style-type: square;
+		margin-left: 20px;
+	}
+	.list-items{
+		font-family: 'Quicksand';
+		font-size: 20px;
+		line-height: 38px;
+	}
+	.cant,
+	.what,
+	.use{
+		border-top: 5px solid #009688;
+	}
+	.who{
+		border-top: 5px dotted #009688;
+	}
+	.use{
+		border-bottom: 5px dotted #009688;
+	}
+	.who,.what,.cant,.use{
+		padding-top: 20px;
+	}
+	/** CONTACT **/
+	.cont form{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.label-text{
+		font-family: 'Raleway';
+		font-size: 24px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	form .btn-primary{
+		font-size: 22px;
+		font-weight: 400
+		letter-spacing: 1px;
+	}
 
+	/** FOOTER **/
+	footer {
+		height: 120px;
+	}
+	/** FOOTER **/
+	.foot-header,
+	.top-link{
+		font-size: 26px;
+	}
 }
